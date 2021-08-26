@@ -1,0 +1,63 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "PDF Data",
+            "name": "pdfData",
+            "kind": "GroupingOrMeasure"          
+        }
+    ],
+    "objects": {
+        "dataPoint": {
+            "displayName": "Properties",
+            "properties": {
+                "showHeader": {
+                    "displayName": "Show Header",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "scrollOverflow": {
+                    "displayName": "Scroll Overflow",
+                    "type": {
+                        "bool": true
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            
+            "conditions": [
+                {
+                    "pdfData": 
+                    {
+                        "max": 1
+                    }
+                }
+            ],           
+            "table": 
+            {
+                "rows": 
+                {
+                    "select": [ 
+                    {
+                        "for": 
+                        {
+                            "in": "pdfData"
+                        }
+                    }]
+                },
+                "dataReductionAlgorithm": 
+                {
+                    "top": 
+                    {
+                        "count": 2
+                    }
+                }
+            }
+        }
+    ]
+}
+
+           

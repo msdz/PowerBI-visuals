@@ -1,0 +1,31 @@
+@header-icon-height: 30px;
+@zoom-resetter-height: @header-icon-height - 10px;
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+    em {
+        background: yellow;
+        padding: 5px;
+        
+    }
+}
+.zoom-button {
+    height: @header-icon-height;  
+}
+#zoom-plus {
+    margin-left: 30px;
+}
+#zoom-minus {
+    margin-left: 5px;
+}
+#zoom-resetter {
+    height: @zoom-resetter-height;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+#zoom-indicator-span {
+    display: inline-block;
+    transform: perspective(1px) translateY(-8px);
+    margin-left: 4px;
+}

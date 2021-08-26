@@ -1,0 +1,30 @@
+p {
+  font-size: 20px;
+  font-weight: bold;
+}
+p em {
+  background: yellow;
+  padding: 5px;
+}
+.zoom-button {
+  height: 30px;
+}
+#zoom-plus {
+  margin-left: 30px;
+}
+#zoom-minus {
+  margin-left: 5px;
+}
+#zoom-resetter {
+  height: 20px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+#zoom-indicator-span {
+  display: inline-block;
+  transform: perspective(1px) translateY(-8px);
+  margin-left: 4px;
+}
+
+
+/*# sourceMappingURL=visual.css.map*/
